@@ -1,8 +1,7 @@
 import joi from 'joi'
 
 const addProductValidation = joi.object({
-    title: joi.string().required().min(10).max(50),
-    description
+    title: joi.string().required().min(10).max(50)
 })
 const updateProductValidation = joi.object({
     id: joi.string().hex().length(24).required(),
