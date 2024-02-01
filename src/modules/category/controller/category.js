@@ -2,7 +2,7 @@ import slugify from "slugify"
 import { categoryModel } from './../../../../database/models/category.model.js';
 import { asyncHandler } from "../../../utils/errorHandling.js";
 import { addOne, deleteOne, getAll, updateOne } from "../../../handlers/factor.js";
-import { ApiFeatures } from "../../../utils/apiFeatures.js";
+import { ApiFeatures } from './../../../utils/ApiFeatures.js';
 
 
 
