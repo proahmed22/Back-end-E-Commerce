@@ -1,8 +1,8 @@
 import slugify from "slugify"
 import { asyncHandler } from "../../../utils/errorHandling.js";
 import { addOne, deleteOne, getAll, updateOne } from "../../../handlers/factor.js";
-import { ApiFeatures } from "../../../utils/apiFeatures.js";
 import { userModel } from './../../../../database/models/user.model.js';
+import { ApiFeatures } from './../../../utils/ApiFeatures.js';
 
 
 

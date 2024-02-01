@@ -2,7 +2,7 @@ import { asyncHandler } from './../../../utils/errorHandling.js';
 import { productModel } from './../../../../database/models/product.model.js';
 import slugify from 'slugify';
 import { deleteOne, getAll } from '../../../handlers/factor.js';
-import { ApiFeatures } from '../../../utils/apiFeatures.js';
+import { ApiFeatures } from '../../../utils/ApiFeatures.js';
 
 const addProduct = asyncHandler(async (req, res, next) => {
     req.body.slug = slugify(req.body.title)

@@ -1,11 +1,11 @@
 import { asyncHandler } from "../../../utils/errorHandling.js";
 import { addOne, deleteOne, getAll, updateOne } from "../../../handlers/factor.js";
-import { ApiFeatures } from "../../../utils/apiFeatures.js";
 import { cartModel } from '../../../../database/models/cart.model.js';
 import { productModel } from '../../../../database/models/product.model.js';
 import { couponModel } from '../../../../database/models/coupon.model.js';
 import { orderModel } from './../../../../database/models/order.model.js';
 import Stripe from 'stripe';
+import { ApiFeatures } from "../../../utils/ApiFeatures.js";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 

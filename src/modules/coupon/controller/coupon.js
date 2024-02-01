@@ -1,8 +1,8 @@
 import { asyncHandler } from "../../../utils/errorHandling.js";
 import { addOne, deleteOne, getAll, updateOne } from "../../../handlers/factor.js";
-import { ApiFeatures } from "../../../utils/apiFeatures.js";
 import { couponModel } from './../../../../database/models/coupon.model.js';
 import qrcode from 'qrcode';
+import { ApiFeatures } from "../../../utils/ApiFeatures.js";
 
 
 const createCoupon = asyncHandler(async (req, res, next) => {

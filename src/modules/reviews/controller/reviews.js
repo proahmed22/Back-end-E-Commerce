@@ -1,7 +1,6 @@
 import { asyncHandler } from "../../../utils/errorHandling.js";
 import { addOne, deleteOne, getAll, updateOne } from "../../../handlers/factor.js";
-import { ApiFeatures } from "../../../utils/apiFeatures.js";
-import { reviewModel } from '../../../../database/models/review.mode.js';
+import { ApiFeatures } from "../../../utils/ApiFeatures.js";
 
 
 
